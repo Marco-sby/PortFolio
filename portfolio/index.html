@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+      body{
+    color: black;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+}
+p{
+    line-height: 2;
+}
+hr{
+    border: dotted #EAF6F6;
+    border-bottom: none;
+    width: 5%;
+    margin: 100px auto;
+}
+h1{
+    font-size: 5.625rem; /* 16px = 100% = 1em*/
+    margin: 50px auto 0 auto;
+    font-family: 'Sacramento', cursive;
+    color: black;
+}
+h2{
+    font-family: 'MonteCarlo', cursive;
+    font-size: 2.5em;
+    color: grey;
+    padding-bottom: 10px;
+}
+h3{
+    font-family: 'MonteCarlo', cursive;
+    color:black;
+
+}
+.top-container{
+    background-color:grey;
+    position: relative;
+    padding-top: 100px;
+
+}
+.top-container > p{
+    line-height: 2;
+    font-weight: normal;
+    color: black;
+}
+.top-cloud{
+    position: absolute;
+    right: 300px;
+    top: 40px;
+    
+}
+.middle-container{
+    margin: 100px 0px;
+}
+.profile >p{
+    width: 80%;
+    margin: auto;
+
+}
+  
+.skill-row{
+    width:50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+} 
+.skill-row >p{
+    text-align: inherit;
+
+}  
+.movie{
+    width: 25%;
+    float: left;
+    padding-right: 30px ;
+    padding-top: 20px;
+}
+.bitcoin{
+    width: 25%;
+    float: right;
+    padding-right: 30px ;
+    padding-top: 50px;
+}
+.bottom-container{
+    background-color: grey;
+    padding: 50px 0 20px;
+
+}
+.bottom-cloud{
+    position: absolute;
+    left: 250px;
+    bottom: 300px;
+}
+.bottom-container >p{
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    padding: 20px 0px;
+}
+.footer-link{
+    color:black;
+    text-decoration: none;
+    margin: 10px 20px;
+}
+.footer-link:hover{
+    color: #EAF6F6;
+}
+.contact-me >p{
+    width: 40%;
+    margin: 40px auto 60px;
+}
+.btn {
+	background-color:grey;
+	border-radius:28px;
+	border:1px solid black;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:'Merriweather', serif;;
+	font-size:20px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.btn:hover {
+	background-color:black;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
+    </style>
+</head>
+<body>
+    <div class="top-container">
+        <img class="top-cloud"src="cloud.png" alt="Cloud">
+        <h1>I'm Marco.</h1>
+        <p>A Computer Science Student</p>
+        <img class="bottom-cloud"src="cloud.png" alt="cloud-img">
+        <img src="background.png" alt="mountain-img">
+    </div>
+    <div class="middle-container">
+        <div class="profile">
+          <img class="prof" src="Perfil-01.png" alt="perfil">
+          <h2>Hello.</h2>
+          <p>I'm Marco Antonio dos Santos, 
+            a passionate professional from Brazil. 
+            With a business background and an adventurous spirit, I embarked on a journey that took me to Ireland. Since February 2018, I have called Ireland my second home.
+          </p> 
+          <p>As a current university student at CCT college, 
+            I am continually expanding my knowledge and skills in areas such as Information Technology and Business Management.</p>
+          </div>
+        </div>
+        <hr>
+        <button onclick="myFunction()" class="btn">Click to See my Projects</button>
+        <div class="skills" id="about">
+          <h2>My Skills.</h2>
+          <div class="skill-row">
+            <img class="movie" src="movie.png" alt="">
+            <h3>Desing & Development</h3>
+            <p>Online Movie Rental Store by adopting
+              Java and NetBeans environment and also MySQL to store movies rented and information from 
+              customers.</p></div>
+          <div class="skill-row">
+            <img class="bitcoin" src="bitcon.png">
+            <h3>Challenge</h3>
+            <p>“Your Ride” is a riding booking decentralized application built and deployed on Ethereum 
+              Blockchain in which drivers bid on their ride requests and that allows users to pay with crypto tokens 
+              using a famous mobile wallet like MetaMask</p>
+          </div>
+        </div>
+        <hr>
+        <div class="contact-me">
+          <h2>Get In Touch</h2>
+          <h3>If you would like talk to  me and see my projects.</h3>
+          <p>I will really appreciate hearing share knowledge with you!</p>
+          <a class="btn" href="marco.santt@outlook.com">CONTACT ME</a>
+        </div>
+        <hr>
+      </div>
+      <div class="bottom-container">
+        <a class="footer-link" href="https://drive.google.com/drive/my-drive">Google Drive</a>
+        <a class="footer-link" href="https://github.com/Marco-sby">GitHub</a>
+        <a class="footer-link" href="2020333@student.cct.ie">Email</a>
+        <p> © 2023 Marco Santos.</p>
+      </div>
+      <script>
+    function myFunction() {
+      var x = document.getElementById("about");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+</body>
+</html>
