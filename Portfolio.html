@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marco Antonio Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    :root {
+      --primary-color: #007bff;
+      --dark-bg: #1a1a1a;
+      --light-bg: #f9f9f9;
+      --text-color: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--light-bg);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--dark-bg);
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: var(--primary-color);
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: var(--dark-bg);
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.75rem;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Marco Antonio</h1>
+    <p>Junior Developer | Frontend & Machine Learning Enthusiast</p>
+  </header>
+
+  <section id="about">
+    <div style="text-align: center; margin-bottom: 2rem;">
+      <img src="profile.jpg" alt="Profile Photo" style="width: 250px; height: 250px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
+    </div>
+    <h2><i class="fas fa-user-circle"></i> About Me</h2>
+    <p>I’m a recent Computing & IT graduate based in Dublin, passionate about building responsive websites and exploring machine learning. While I don’t have professional experience yet, I’ve developed multiple personal and academic projects to build real-world skills in web development and data analysis. I’m actively seeking junior roles to kickstart my tech career.</p>
+  </section>
+
+  <section id="projects">
+    <h2><i class="fas fa-laptop-code"></i> Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>🍽️ Restaurant Website</h3>
+        <p>Personal project built to practice frontend development using HTML, CSS, and JavaScript. Includes a responsive layout, interactive menu, and reservation form.</p>
+        <a href="https://github.com/Marco-sby" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>💇 Hairdresser Appointment App</h3>
+        <p>Practice project for a fictional salon, using EJS and CSS. Built to learn Node.js-based templating and UI layout for bookings and services.</p>
+        <a href="https://github.com/Marco-sby" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>🤖 ML Regression & Sentiment Analysis</h3>
+        <p>College coursework project using neural networks (Keras) and TextBlob to analyze bank income and Amazon Alexa reviews.</p>
+        <a href="https://github.com/Marco-sby" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>📊 ML Classification</h3>
+        <p>Supervised learning project built during college using Python and scikit-learn. Trained and tested classification models on a structured dataset.</p>
+        <a href="https://github.com/Marco-sby" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2><i class="fas fa-file-alt"></i> Resume</h2>
+    <a href="./Marco_Antonio_Dos_Santos_CV_Dublin.docx" class="btn" download>Download My CV</a>
+  </section>
+
+  <section id="contact">
+    <h2><i class="fas fa-envelope"></i> Contact</h2>
+    <p>Email: <a href="mailto:marco.santt@outlook.com">marco.santt@outlook.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/marco-antonio-dos-santos-8b8a78b4" target="_blank">marco-antonio-dos-santos</a></p>
+    <p>GitHub: <a href="https://github.com/Marco-sby" target="_blank">Marco-sby</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Marco Antonio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
